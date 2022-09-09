@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+        .map {
+            height: 100vh;
+            width: 100vw;
+        }
+        .cstm-map-group {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="map" class="map"></div>
+    <div class="cstm-map-group">
+        <div class="pins-group group-0 active2">
+            <button class="accordion">
+                <div class="logo-pins">
+                    <img src="https://theproxima.ca/wp-content/uploads/2022/01/pin-logo.png">
+                        <h4>Groceries &amp; Convenience</h4>
+                    </div>
+                </button>
+                <ul class="cstm-map-list">
+                    <div class="panel">
+                        <li maps-direction="https://goo.gl/maps/nrqWNHbgBuYznYmB9" maps-lat="48.429982157014344" maps-long="-123.41752911041587" maps-group="group-0">
+                            <p>Red Barn Market</p>
+                        </li>
+                    </div>
+                    <div class="panel">
+                        <li maps-direction="https://goo.gl/maps/hNvuTGBKrA6BZ6sj7" maps-lat="48.43149522533983" maps-long="-123.39967195120204" maps-group="group-0">
+                            <p>Shoppers Drug Mart</p>
+                        </li>
+                    </div>
+                    <div class="panel">
+                        <li maps-direction="https://goo.gl/maps/wQsgYncPsEk9QjP36" maps-lat="48.42936972408751" maps-long="-123.41076077249899" maps-group="group-0">
+                            <p>Country Grocer</p>
+                        </li>
+                    </div>
+                    <div class="panel">
+                        <li maps-direction="https://goo.gl/maps/v7EspoDg9epiborh6" maps-lat="48.43304157545031" maps-long="-123.38053483411134" maps-group="group-0">
+                            <p>Westside Village Shopping Centre</p>
+                        </li>
+                    </div>
+                    <div class="panel">
+                        <li maps-direction="https://goo.gl/maps/u47tXHBogbSgfMQYA" maps-lat="48.43463327064735" maps-long="-123.39713076377123" maps-group="group-0">
+                            <p>Wholesale </p>
+                        </li>
+                    </div>
+                </ul>
+        </div>
+        <div class="pins-group group-1">
+                <button class="accordion">
+                    <div class="logo-pins">
+                        <img src="https://theproxima.ca/wp-content/uploads/2022/01/community.png">
+                            <h4>Community</h4>
+                        </div>
+                    </button>
+                    <ul class="cstm-map-list">
+                        <div class="panel">
+                            <li maps-direction="https://goo.gl/maps/3krEULF9Yq5FFRuw6" maps-lat="48.421494567922124" maps-long="-123.41894766693405" maps-group="group-1">
+                                <p>Saxe Point Park</p>
+                            </li>
+                        </div>
+                        <div class="panel">
+                            <li maps-direction="https://goo.gl/maps/uyj7ukeK1Aba9v8o6" maps-lat="48.43064219825714" maps-long="-123.41309856310794" maps-group="group-1">
+                                <p>Memorial </p>
+                            </li>
+                        </div>
+                        <div class="panel">
+                            <li maps-direction="https://goo.gl/maps/6GCRHNdMeKi6zb1U9" maps-lat="48.427770698658655" maps-long="-123.41042127885598" maps-group="group-1">
+                                <p>Esquimalt </p>
+                            </li>
+                        </div>
+                        <div class="panel">
+                            <li maps-direction="https://goo.gl/maps/4iRL28gJofEuqy9D6" maps-lat="48.434154169823586" maps-long="-123.38502311129542" maps-group="group-1">
+                                <p>The Market Garden</p>
+                            </li>
+                        </div>
+                        <div class="panel">
+                            <li maps-direction="https://g.page/esquimalt-farmers-market-bc?share" maps-lat="48.429470389371374" maps-long="-123.41416824298746" maps-group="group-1">
+                                <p>Esquimalt Farmers Market</p>
+                            </li>
+                        </div>
+                    </ul>
+        </div>
+        <div class="pins-group group-2">
+                    <button class="accordion">
+                        <div class="logo-pins">
+                            <img src="https://theproxima.ca/wp-content/uploads/2022/01/restaurants-and-cafe.png">
+                                <h4>Restaurants &amp; Cafes</h4>
+                            </div>
+                        </button>
+                        <ul class="cstm-map-list">
+                            <div class="panel">
+                                <li maps-direction="https://g.page/spinnakersbrewpub?share" maps-lat="48.42906983878983" maps-long="-123.38496022777612" maps-group="group-2">
+                                    <p>Spinnakers Gastro Brewpub</p>
+                                </li>
+                            </div>
+                            <div class="panel">
+                                <li maps-direction="https://goo.gl/maps/p9uTmEnDauNWnWUh6" maps-lat="48.43003894617386" maps-long="-123.41319354769466" maps-group="group-2">
+                                    <p>La Belle Patate</p>
+                                </li>
+                            </div>
+                            <div class="panel">
+                                <li maps-direction="https://goo.gl/maps/WH8ZDjWP7mb3XXW99" maps-lat="48.42986669524897" maps-long="-123.41289369754081" maps-group="group-2">
+                                    <p>Kwao Thai Restaurant</p>
+                                </li>
+                            </div>
+                            <div class="panel">
+                                <li maps-direction="https://goo.gl/maps/P82GxHndqiGdES847" maps-lat="48.4322216529636" maps-long="-123.37833354362932" maps-group="group-2">
+                                    <p>Fol Epi</p>
+                                </li>
+                            </div>
+                            <div class="panel">
+                                <li maps-direction="https://goo.gl/maps/Wytvv9hFBqXbNa916" maps-lat="48.430851210317634" maps-long="-123.40152465318734" maps-group="group-2">
+                                    <p>Sushi Story</p>
+                                </li>
+                            </div>
+                            <div class="panel">
+                                <li maps-direction="https://goo.gl/maps/s3GkM1QmeCqspUrX7" maps-lat="48.42981197125204" maps-long="-123.41468086445477" maps-group="group-2">
+                                    <p>Esquimalt Roasting Company</p>
+                                </li>
+                            </div>
+                        </ul>
+        </div>
+        <div class="pins-group group-3">
+                        <button class="accordion">
+                            <div class="logo-pins">
+                                <img src="https://theproxima.ca/wp-content/uploads/2022/01/arts-and-recreation.png">
+                                    <h4>Arts &amp; Recreation</h4>
+                                </div>
+                            </button>
+                            <ul class="cstm-map-list">
+                                <div class="panel">
+                                    <li maps-direction="https://goo.gl/maps/FNVwXH5NBVZNYyTy5" maps-lat="48.428839113411" maps-long="-123.41280041677774" maps-group="group-3">
+                                        <p>Esquimalt Recreation Centre</p>
+                                    </li>
+                                </div>
+                                <div class="panel">
+                                    <li maps-direction="https://g.page/esquimalt-community-arts-hub?share" maps-lat="48.430212444449715" maps-long="-123.4005651724376" maps-group="group-3">
+                                        <p>Esquimalt </p>
+                                    </li>
+                                </div>
+                                <div class="panel">
+                                    <li maps-direction="https://goo.gl/maps/SYFyPpJidZfwMmbX6" maps-lat="48.4289541661675" maps-long="-123.40971345764586" maps-group="group-3">
+                                        <p>Archie Browning Sports Centre</p>
+                                    </li>
+                                </div>
+                                <div class="panel">
+                                    <li maps-direction="https://g.page/FlyingSquirrelVictoria?share" maps-lat="48.4337827669098" maps-long="-123.39475328348185" maps-group="group-3">
+                                        <p>Flying Squirrel Trampoline Park</p>
+                                    </li>
+                                </div>
+                                <div class="panel">
+                                    <li maps-direction="https://g.page/taranisathletics?share" maps-lat="48.43696058823309" maps-long="-123.40121721431551" maps-group="group-3">
+                                        <p>Taranis Athletics &amp; Crossfit</p>
+                                    </li>
+                                </div>
+                            </ul>
+        </div>
+        <div class="view">
+        <p class="see-all">View All</p>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK_1MoE5fHbBuKXHwIPHFVhwczxOW_SQo&callback=initMap" async></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script>
+    let map, infoWindows = [], allMarkers = []
+
+	function initMap() {
+		var stylers = [{
+				"featureType": "all",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+						"saturation": 36
+					},
+					{
+						"color": "#333333"
+					},
+					{
+						"lightness": 40
+					}
+				]
+			},
+			{
+				"featureType": "all",
+				"elementType": "labels.text.stroke",
+				"stylers": [{
+						"visibility": "on"
+					},
+					{
+						"color": "#ffffff"
+					},
+					{
+						"lightness": 16
+					}
+				]
+			},
+			{
+				"featureType": "all",
+				"elementType": "labels.icon",
+				"stylers": [{
+					"visibility": "off"
+				}]
+			},
+			{
+				"featureType": "administrative",
+				"elementType": "geometry.fill",
+				"stylers": [{
+						"color": "#fefefe"
+					},
+					{
+						"lightness": 20
+					}
+				]
+			},
+			{
+				"featureType": "administrative",
+				"elementType": "geometry.stroke",
+				"stylers": [{
+						"color": "#fefefe"
+					},
+					{
+						"lightness": 17
+					},
+					{
+						"weight": 1.2
+					}
+				]
+			},
+			{
+				"featureType": "administrative.locality",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#357c66"
+				}]
+			},
+			{
+				"featureType": "administrative.neighborhood",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#357c66"
+				}]
+			},
+			{
+				"featureType": "administrative.land_parcel",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#357c66"
+				}]
+			},
+			{
+				"featureType": "landscape",
+				"elementType": "geometry",
+				"stylers": [{
+						"color": "#ebf7f5"
+					},
+					{
+						"lightness": 20
+					}
+				]
+			},
+			{
+				"featureType": "landscape",
+				"elementType": "labels.text",
+				"stylers": [{
+					"color": "#357c66"
+				}]
+			},
+			{
+				"featureType": "landscape",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#357c66"
+				}]
+			},
+			{
+				"featureType": "landscape",
+				"elementType": "labels.text.stroke",
+				"stylers": [{
+					"color": "#ffffff"
+				}]
+			},
+			{
+				"featureType": "landscape.man_made",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#357c66"
+				}]
+			},
+			{
+				"featureType": "landscape.natural",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#357c66"
+				}]
+			},
+			{
+				"featureType": "poi",
+				"elementType": "geometry",
+				"stylers": [{
+						"color": "#f5f5f5"
+					},
+					{
+						"lightness": 21
+					}
+				]
+			},
+			{
+				"featureType": "poi.attraction",
+				"elementType": "geometry.fill",
+				"stylers": [{
+					"color": "#75bfa6"
+				}]
+			},
+			{
+				"featureType": "poi.business",
+				"elementType": "geometry.fill",
+				"stylers": [{
+					"color": "#daeae7"
+				}]
+			},
+			{
+				"featureType": "poi.park",
+				"elementType": "geometry",
+				"stylers": [{
+						"color": "#dedede"
+					},
+					{
+						"lightness": 21
+					}
+				]
+			},
+			{
+				"featureType": "poi.park",
+				"elementType": "geometry.fill",
+				"stylers": [{
+					"color": "#cae9d8"
+				}]
+			},
+			{
+				"featureType": "poi.park",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#46a487"
+				}]
+			},
+			{
+				"featureType": "poi.sports_complex",
+				"elementType": "geometry.fill",
+				"stylers": [{
+					"color": "#75bfa6"
+				}]
+			},
+			{
+				"featureType": "road.highway",
+				"elementType": "geometry.fill",
+				"stylers": [{
+						"color": "#ffffff"
+					},
+					{
+						"lightness": 17
+					}
+				]
+			},
+			{
+				"featureType": "road.highway",
+				"elementType": "geometry.stroke",
+				"stylers": [{
+						"color": "#ffffff"
+					},
+					{
+						"lightness": 29
+					},
+					{
+						"weight": 0.2
+					}
+				]
+			},
+			{
+				"featureType": "road.arterial",
+				"elementType": "geometry",
+				"stylers": [{
+						"color": "#ffffff"
+					},
+					{
+						"lightness": 18
+					}
+				]
+			},
+			{
+				"featureType": "road.arterial",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#357c66"
+				}]
+			},
+			{
+				"featureType": "road.local",
+				"elementType": "geometry",
+				"stylers": [{
+						"color": "#ffffff"
+					},
+					{
+						"lightness": 16
+					}
+				]
+			},
+			{
+				"featureType": "road.local",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#357c66"
+				}]
+			},
+			{
+				"featureType": "transit",
+				"elementType": "geometry",
+				"stylers": [{
+						"color": "#f2f2f2"
+					},
+					{
+						"lightness": 19
+					}
+				]
+			},
+			{
+				"featureType": "water",
+				"elementType": "geometry",
+				"stylers": [{
+						"color": "#46a487"
+					},
+					{
+						"lightness": 17
+					}
+				]
+			},
+			{
+				"featureType": "water",
+				"elementType": "labels.text.fill",
+				"stylers": [{
+					"color": "#ffffff"
+				}]
+			},
+			{
+				"featureType": "water",
+				"elementType": "labels.text.stroke",
+				"stylers": [{
+					"color": "#46a487"
+				}]
+			}
+		]
+		const latitude = 48.4298074
+		const longitude = -123.4070632
+		map = new google.maps.Map(document.getElementById("map"), {
+			center: new google.maps.LatLng(latitude, longitude),
+			zoom: 16,
+			styles: stylers
+		});
+
+		pinLocation({
+			title: 'Proxima',
+			link: 'https://goo.gl/maps/FLaUuDVzRsDN4YGV6',
+			latitude,
+			longitude,
+			group: null,
+			icon: `/wp-content/uploads/2022/01/location.png`,
+			_self: null
+		})
+	}
+
+	function pinLocation({
+		icon,
+		latitude,
+		longitude,
+		title,
+		link,
+		_self,
+		group
+	}) {
+		const marker = new google.maps.Marker({
+			position: new google.maps.LatLng(latitude, longitude),
+			icon,
+			map,
+			animation: google.maps.Animation.DROP
+		})
+		const infowindow = new google.maps.InfoWindow({
+			content: `<h5>${title || ''}</h5><a target='_blank' href="${link}">More Info</a>`
+		});
+		infoWindows.push(infowindow)
+
+		if (group != null) allMarkers[group].push(marker)
+		if (_self) _self.addEventListener('click', () => {
+			openPopup(true)
+			document.getElementById("map").scrollIntoView({
+				behavior: 'smooth'
+			})
+		});
+		marker.addListener("click", openPopup);
+
+
+		function openPopup(focus) {
+			if (marker.getMap()) {
+				infoWindows.forEach(wnd => wnd.close())
+				infowindow.open({
+					anchor: marker,
+					map,
+					shouldFocus: focus,
+				});
+			}
+		}
+	}
+
+	window.addEventListener('load', function() {
+		var pins_group_container = document.querySelectorAll('.pins-group')
+		for (let j = 0; j < pins_group_container.length; j++) {
+			var pins_group = pins_group_container[j].querySelectorAll('li')
+			var icon = pins_group_container[j].querySelector('img').src
+			var title = pins_group_container[j].querySelector('h4')
+			allMarkers.push([])
+			title.addEventListener('click', function() {
+				allMarkers.forEach(m => m.forEach(n => n.setMap(null)))
+				allMarkers[j].forEach(m => {
+					m.setAnimation(google.maps.Animation.DROP);
+					m.setMap(map)
+				})
+				document.getElementById("map").scrollIntoView({
+					behavior: 'smooth'
+				})
+				infoWindows.forEach(wnd => wnd.close())
+			})
+			for (let i = 0; i < pins_group.length; i++) {
+				const pin = pins_group[i]
+				pinLocation({
+					title: pin.innerText,
+					link: pin.getAttribute('maps-direction'),
+					latitude: pin.getAttribute('maps-lat'),
+					longitude: pin.getAttribute('maps-long'),
+					group: j,
+					icon,
+					_self: pin
+				})
+			}
+		}
+		document.querySelector('.see-all').addEventListener('click', function() {
+			allMarkers.forEach((m, i) => {
+				m.forEach(n => {
+					n.setMap(null)
+					n.setAnimation(google.maps.Animation.DROP);
+					setTimeout(() => n.setMap(map), 50 * i)
+				})
+			})
+			infoWindows.forEach(wnd => wnd.close())
+			document.getElementById("map").scrollIntoView({
+				behavior: 'smooth'
+			})
+		})
+
+	})
+    </script>
+</body>
+</html>
