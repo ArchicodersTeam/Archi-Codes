@@ -16,6 +16,4 @@ function customResize(_t){
 
 
 /* Add your selectors here */
-['.auto-height-1.c-cta .elementor-cta__content',
- '.auto-height-2',
- '.auto-height-1'].forEach(selector => customResize(selector))
+['.multiple-selector-1', '.multiple-selector-2'].forEach(selector => customResize(selector))
