@@ -1,0 +1,15 @@
+@media (max-width: 1300px) {
+    body .elementor-nav-menu--dropdown-tablet .elementor-nav-menu--dropdown {
+        display: block;
+    }
+
+    body .elementor-nav-menu--dropdown-tablet .elementor-menu-toggle {
+        display: flex;
+    }
+}
+
+@media (max-width: 1300px) {
+    .elementor-nav-menu--dropdown-tablet .elementor-nav-menu--main {
+        display: none;
+    }
+}
