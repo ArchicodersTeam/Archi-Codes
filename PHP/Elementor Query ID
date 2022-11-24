@@ -1,11 +1,16 @@
 <?php
 
-    add_action( 'elementor/query/locationFilter', function ( $query ) {
-        $key = 'changeME';
-        $value = $_GET['changeME'];
+add_action( 'elementor/query/locationFilter', function ( $query ) {
+	$value = $_GET['ChangeME'];
 
-        $query -> set("meta_key", $key);
-        $query -> set("meta_value", $value);
-    });
+	$tax_query = array(
+		'taxonomy' => 'location',
+		'field'    => 'slug',
+		'terms'    => array($value),
+	);
+
+	$query -> set("tax_query", array($tax_query));
+
+});
 
 ?>
