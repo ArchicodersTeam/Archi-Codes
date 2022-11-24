@@ -1,0 +1,11 @@
+<?php
+
+    add_action( 'elementor/query/locationFilter', function ( $query ) {
+        $key = 'changeME';
+        $value = $_GET['changeME'];
+
+        $query -> set("meta_key", $key);
+        $query -> set("meta_value", $value);
+    });
+
+?>
