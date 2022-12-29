@@ -38,16 +38,12 @@
           
       }
       
-      function sortDates($dates) {
-          usort($dates, function($a, $b) {
-            return strtotime($a) - strtotime($b);
-          });
-          return $dates;
-        }
-        
-        $sortedDates = sortDates($dates);
-        if(count($sortedDates)) {
-            echo $sortedDates[0];
+        if(count($dates) > 0) {
+            usort($dates, function($a, $b) {
+                return strtotime($a) - strtotime($b);
+            });
+            
+            echo $dates[0];
         } else  {
             echo 'No Delivery';
         }
@@ -55,5 +51,4 @@
     }
     
     // Register the shortcode
-    add_shortcode( 'next_delivery_date', 'my_custom_shortcode' );
-
+    add_shortcode( 'my_custom_shortcode', 'my_custom_shortcode' );
