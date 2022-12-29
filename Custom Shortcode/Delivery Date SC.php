@@ -1,3 +1,5 @@
+//This shortcode will get the closest delivery date of the customer
+
 <?php 
     // Create the shortcode function
     function my_custom_shortcode() {
