@@ -1,6 +1,6 @@
 <?php
 
-function create_listing_post_type() {
+function create_customposttype() {
     register_post_type('customposttype',
         array(
             'labels' => array(
