@@ -1,6 +1,6 @@
 <?php
 
-function create_listing_taxonomy() {
+function create_cpt_taxonomy() {
     register_taxonomy(
         'cpt-cat',
         array(
