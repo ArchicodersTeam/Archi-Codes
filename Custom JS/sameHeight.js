@@ -1,6 +1,6 @@
 function customResize(_t){
 	window.addEventListener('resize', handleHeightChanges)
-	window.addEventListener('load', handleHeightChanges)
+	document.addEventListener('DOMContentLoaded', handleHeightChanges)
 
 	function handleHeightChanges(){
 			var highest = 0
@@ -15,5 +15,8 @@ function customResize(_t){
 }
 
 
-/* Add your selectors here */
-['.multiple-selector-1', '.multiple-selector-2'].forEach(selector => customResize(selector))
+(() => {
+	
+	/* Add your selectors here */
+	['#flip-box-wrap .elementor-flip-box__layer__description'].forEach(selector => customResize(selector))
+})()
