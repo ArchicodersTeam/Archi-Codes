@@ -89,7 +89,7 @@
         if (is_tax()) {
 
             // Set Taxonomy
-            $taxonomy = $atts['post-type'];
+            $taxonomy = $atts['taxonomy'];
 
             // Get the current term object
             $term = get_queried_object();
