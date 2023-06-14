@@ -1,0 +1,7 @@
+.grid-wrap .grid-item {
+    width: calc(25% - 33px); 
+    /* 
+        4 Column 
+        33px = gutter/gap 
+    */
+}
