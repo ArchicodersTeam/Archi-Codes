@@ -1,5 +1,6 @@
 jQuery(function($) {
     $(document).ready(function() {
+        const selector = $('.targetElement') //Change this
         const tablet = {
             breakpoint: 1025,
             settings: {
@@ -14,12 +15,12 @@ jQuery(function($) {
             }
         }
 
-        $('.targetElement').slick({
-            dots: false,
+        selector.css('display', 'inline-block') // Prevents display Error
+        selector.slick({
+            dots: true,
             arrows: true,
-            nextArrow: $('#next-arrow-square'),
-            prevArrow: $('#prev-arrow-square'),
             speed: 300,
+            infinite: true,
             autoplay: false,
             autoplaySpeed: 2000,
             slidesToShow: 3,
