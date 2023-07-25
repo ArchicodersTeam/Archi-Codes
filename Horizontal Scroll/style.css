@@ -1,0 +1,4 @@
+#scroll-trigger-wrap,
+#scroll-trigger-wrap .scroll-trigger-item {
+    transition: revert;
+}
