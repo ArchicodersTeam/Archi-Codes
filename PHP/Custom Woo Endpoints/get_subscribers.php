@@ -7,6 +7,9 @@ add_action('rest_api_init', function () {
 	register_rest_route('order_report/v1', '/subscribers', array(
 		'methods' => 'GET',
 		'callback' => 'get_order_report_subscribers',
+		'permission_callback' => function ( $request ) {
+			return $request->get_param( 'auth_token' ) === 'test_password';
+		  }
 	));
 });
 
