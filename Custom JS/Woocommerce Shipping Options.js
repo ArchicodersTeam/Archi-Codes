@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const shipping_options = [...document.querySelectorAll('.shipping_method')].map((e) => {
             return {
                 value: e.value,
-                form: e.form,
                 select: () => e.click(),
                 is_checked: e.checked,
                 label: e.labels ? e.labels[0].textContent : 'no label',
@@ -39,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (free_shipping) {
             // Show free and express shipping options
             shipping_options.forEach(option => {
-                option.hide(false)
                 if (option !== free_shipping && option !== express_shipping) {
                     option.hide(true)
                 }
