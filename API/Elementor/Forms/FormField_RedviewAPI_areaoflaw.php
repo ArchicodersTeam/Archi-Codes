@@ -238,34 +238,7 @@ function add_new_area_of_laws_select_field($form_fields_registrar)
          * @access public
          * @return void
          */
-        public function content_template_script()
-        {
-?>
-            <!-- 			<script>
-            jQuery( document ).ready( () => {
-    
-                elementor.hooks.addFilter(
-                    'elementor_pro/forms/content_template/field/<?php echo $this->get_type(); ?>',
-                    function ( inputField, item, i ) {
-                        const fieldId      = `form_field_${i}`;
-                        const fieldClass   = `elementor-field-textual elementor-field ${item.css_classes}`;
-    
-                        return
-                        `<div class='elementor-field elementor-select-wrapper remove-before '>
-                            <div class='select-caret-down-wrapper'>
-                                <i aria-hidden='true' class='eicon-caret-down'></i>
-                            </div>
-                            <select class="${fieldClass}" id="${fieldId}">
-                                <option value='' selected>Placeholder Text</option>
-                            </select>
-                        </div>`
-                    }, 10, 3
-                );
-    
-            });
-            </script> -->
-<?php
-        }
+        public function content_template_script(){}
     }
 
     $form_fields_registrar->register(new \Elementor_Area_Of_Laws_Field());
