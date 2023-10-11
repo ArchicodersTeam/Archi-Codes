@@ -54,8 +54,6 @@ function getZIPCodeByAddress(streetAddress, state) {
     })
 }
 
-getZIPCodeByAddress('1600 Amphitheatre Parkway', 'Mountain View, CA')
-
 async function test() {
     console.log(await getZIPCodeByAddress('1600 Amphitheatre Parkway', 'Mountain View, CA'))
 }
