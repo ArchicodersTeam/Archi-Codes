@@ -174,7 +174,7 @@ function add_new_area_of_laws_select_field($form_fields_registrar)
         {
             if (empty($field['value'])) {
                 return;
-            }
+            } 
         }
 
         /**
