@@ -92,12 +92,12 @@ function add_new_area_of_laws_select_field($form_fields_registrar)
 
             $headers = array(
                 'accept' => 'text/plain',
-                'ClientId' => '3F6C5EC4-F5DF-44DC-B541-3878C737BE67',
+                'ClientId' => '{{ClientID}}',
                 'Content-Type' => 'application/json-patch+json',
             );
 
             $body = json_encode(array(
-                'clientSecret' => '2C2B9C04-EB4A-4C13-8D8A-EE35B557C668',
+                'clientSecret' => '{{clientSecret}}',
             ));
 
             $args = array(
